@@ -1,0 +1,30 @@
+:root {
+    --purple: #13005A;
+    --blue: #00337C;
+    --light-blue: #1C82AD;
+    --green: #03C988;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+}
+
+/* HEADER SECTION */
+header{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: var(--purple);
+    color: var(--green);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--green);
+}
