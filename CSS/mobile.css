@@ -20,11 +20,72 @@ header{
     position: fixed;
     height: 50px;
     width: 100%;
+    display: flex;
     background-color: var(--purple);
     color: var(--green);
 }
-
 header a {
     text-decoration: none;
     color: var(--green);
 }
+header h1 {
+    height: auto;
+    width: 75%;
+    padding: 15px 0;
+    font-size: 1.6rem;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.8rem;
+    text-align: center;
+    border-right: dashed var(--green) 1px;
+    border-bottom: dashed var(--green) 1px;
+}
+header nav {
+    height: auto;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: dashed var(--green) 1px;
+}
+header .menu__list {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    border-bottom: dashed 1px;
+}
+.menu__list li{
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+.menu__button {
+    border: none;
+}
+.menu__list.active{
+    display: flex;
+}
+.menu__button span {
+    display: block;
+    height: 35px;
+    width: 35px;
+    background-image: url("../ASSETS/ICONS/menu_dark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--purple);
+}
+
+/* MAIN SECTION*/
+main {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--purple);
+}
+
