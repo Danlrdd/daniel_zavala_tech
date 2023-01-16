@@ -20,6 +20,7 @@ h2 {
 p {
     font-size: 1.8rem;
     line-height: 2.8rem;
+    margin-bottom: 10px;
 }
 a {
     text-decoration: none;
@@ -96,7 +97,7 @@ header .menu__list {
 
 /* MAIN SECTION*/
 main {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: var(--purple);
 }
@@ -109,21 +110,29 @@ main {
     padding-top: 50px;
     border-bottom: dashed 1px var(--green);
 }
+.profileContainer__photo {
+    height: auto;
+    width: 100%;
+}
+.profileContainer__photo img {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+    border-radius: 15px;
+}
 .profileContainer h2{
     margin-top: 10px;
-}
-.profileContainer p {
-    margin-bottom: 10px;
 }
 .profileContainer__p--3 {
     display: none;
 }
 .profileContainer__button--download {
-    height: 30px;
+    height: 40px;
     width: 200px;
     display: flex;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     background-color: var(--purple);
     border: dashed 1px var(--green);
     border-radius: 2px;
@@ -148,4 +157,14 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* EXPERIENCE SECTION */
+.experienceContainer {
+    height: auto;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-bottom: dashed 1px var(--green);
 }
