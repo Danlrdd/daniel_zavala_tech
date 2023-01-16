@@ -15,7 +15,7 @@ html {
     color: white;
 }
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 p {
     font-size: 1.8rem;
@@ -131,8 +131,7 @@ main {
     height: 40px;
     width: 200px;
     display: flex;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 20px auto;
     background-color: var(--purple);
     border: dashed 1px var(--green);
     border-radius: 2px;
@@ -167,4 +166,19 @@ main {
     margin: 0 auto;
     padding-top: 20px;
     border-bottom: dashed 1px var(--green);
+}
+.experienceContainer__slider {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 900px;
+    margin: 10px 0;
+    border: dashed white;
+    border-width: 1px 0 1px 0;
+}
+.experienceContainer__slider img  {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
