@@ -3,6 +3,7 @@
     --blue: #00337C;
     --light-blue: #1C82AD;
     --green: #03C988;
+    --just-white: #ffffff
 }
 * {
     box-sizing: border-box;
@@ -18,8 +19,9 @@ h2 {
     font-size: 2rem;
 }
 p {
-    font-size: 1.8rem;
-    line-height: 2.8rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.8rem;
     margin-bottom: 10px;
 }
 a {
@@ -47,8 +49,8 @@ header h1 {
     font-family: 'Press Start 2P', cursive;
     line-height: 1.8rem;
     text-align: center;
-    border-right: dashed var(--green) 1px;
-    border-bottom: dashed var(--green) 1px;
+    border-right: dashed var(--just-white) 1px;
+    border-bottom: dashed var(--just-white) 1px;
 }
 header nav {
     height: auto;
@@ -56,7 +58,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: dashed var(--green) 1px;
+    border-bottom: dashed var(--just-white) 1px;
 }
 header .menu__list {
     position: absolute;
@@ -78,8 +80,20 @@ header .menu__list {
     font-size: 1.6rem;
     font-weight: 500;
 }
+.menu__list li:hover {
+    text-decoration: underline 2px var(--green);
+}
 .menu__button {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     border: none;
+    background-color: var(--purple);
+}
+.menu__button:hover {
+    background-color: var(--blue);
 }
 .menu__list.active{
     display: flex;
@@ -92,7 +106,6 @@ header .menu__list {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: var(--purple);
 }
 
 /* MAIN SECTION*/
@@ -108,7 +121,7 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding-top: 50px;
-    border-bottom: dashed 1px var(--green);
+    /* border-bottom: dashed 1px var(--just-white); */
 }
 .profileContainer__photo {
     height: auto;
@@ -122,7 +135,11 @@ main {
     border-radius: 15px;
 }
 .profileContainer h2{
-    margin-top: 10px;
+    margin: 20px auto;
+}
+.profileContainer p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 }
 .profileContainer__p--3 {
     display: none;
@@ -133,8 +150,14 @@ main {
     display: flex;
     margin: 20px auto;
     background-color: var(--purple);
-    border: dashed 1px var(--green);
-    border-radius: 2px;
+    border: dashed 1px var(--just-white);
+}
+.profileContainer__button--download:hover{
+    background-color: var(--blue);
+    border: solid 1px var(--green);
+}
+.profileContainer__button--download a:hover {
+    color: var(--green);
 }
 .profileContainer__button--download a {
     width: 100%;
@@ -165,7 +188,7 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding-top: 20px;
-    border-bottom: dashed 1px var(--green);
+    border-bottom: dashed 1px var(--just-white);
 }
 .experienceContainer__slider {
     display: block;
@@ -173,7 +196,7 @@ main {
     width: 100%;
     max-width: 900px;
     margin: 10px 0;
-    border: dashed white;
+    border: dashed var(--just-white);
     border-width: 1px 0 1px 0;
 }
 .experienceContainer__slider img  {
