@@ -18,6 +18,9 @@ html {
 h2 {
     font-size: 2rem;
 }
+h3 {
+    font-size: 1.4rem;
+}
 p {
     font-size: 1.3rem;
     font-weight: 400;
@@ -112,6 +115,7 @@ header .menu__list {
 main {
     height: 100%;
     width: 100%;
+    min-width: 320px;
     background-color: var(--purple);
 }
 /* PROFILE SECTION */
@@ -121,7 +125,7 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding-top: 50px;
-    /* border-bottom: dashed 1px var(--just-white); */
+    border-bottom: dashed 1px var(--just-white);
 }
 .profileContainer__photo {
     height: auto;
@@ -187,7 +191,7 @@ main {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding: 20px 0;
     border-bottom: dashed 1px var(--just-white);
 }
 .sliderContainer {
@@ -197,7 +201,6 @@ main {
     max-width: 900px;
     margin: 10px 0;
     border: dashed 1px var(--just-white);
-    /* border-width: 1px 0 1px 0; */
     overflow: hidden;
 }
 .sliderContainer:hover {
@@ -238,4 +241,52 @@ main {
 }
 .slider__btn--left {
     left: 10px;
+}
+
+/* EDUCATION SECTION */
+.educationContainer {
+    height: auto;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-bottom: dashed 1px var(--just-white);
+}
+.educationContainer h2 {
+    margin-bottom: 10px;
+}
+.education__section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.education__section h3 {
+    margin-right: 10px;
+}
+.education__section p {
+    margin-bottom: 0;
+}
+.education__section--span {
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--green);
+    border: solid 2px var(--green);
+}
+.education__section--span.--pucp {
+    background-image: url("../ASSETS/IMAGES/pucp_logo.png") ;
+}
+.education__section--span.--autonoma {
+    background-image: url("../ASSETS/IMAGES/autonoma_logo.png") ;
+}
+.education__section--span.--language {
+    background-image: url("../ASSETS/IMAGES/us_flag.jpg") ;
+}
+.education__section--span.--software {
+    background-image: url("../ASSETS/IMAGES/adobe_premier_logo.png") ;
 }
