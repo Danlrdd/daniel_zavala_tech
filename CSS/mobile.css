@@ -125,7 +125,7 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding-top: 50px;
-    border-bottom: dashed 1px var(--just-white);
+    /* border-bottom: dashed 1px var(--just-white); */
 }
 .profileContainer__photo {
     height: auto;
@@ -192,7 +192,7 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px 0;
-    border-bottom: dashed 1px var(--just-white);
+    /* border-bottom: dashed 1px var(--just-white); */
 }
 .sliderContainer {
     display: flex;
@@ -257,7 +257,7 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px 0;
-    border-bottom: dashed 1px var(--just-white);
+    /* border-bottom: dashed 1px var(--just-white); */
 }
 .educationContainer h2 {
     margin-bottom: 10px;
@@ -296,4 +296,37 @@ main {
 }
 .education__section--span.--software {
     background-image: url("../ASSETS/IMAGES/adobe_premier_logo.png") ;
+}
+
+/* PORTFOLIO SECTION */
+.portfolioContainer {
+    height: auto;
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+    padding-bottom: 20px;
+}
+.portfolio__logos {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.portfolio__logos span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /* background-color: #03C988; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+.portfolio__logos .--html {
+    background-image: url("../ASSETS/IMAGES/html5.png");
+}
+.portfolio__logos .--css {
+    background-image: url("../ASSETS/IMAGES/css.png");
+}
+.portfolio__logos .--js {
+    background-image: url("../ASSETS/IMAGES/js.png");
 }
