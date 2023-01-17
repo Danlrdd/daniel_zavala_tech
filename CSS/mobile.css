@@ -195,7 +195,6 @@ main {
     border-bottom: dashed 1px var(--just-white);
 }
 .sliderContainer {
-    /* position: relative; */
     display: flex;
     height: auto;
     width: 100%;
@@ -228,6 +227,7 @@ main {
     object-fit: cover;
 }
 .slider__btn {
+    display: flex;
     width: 25px;
     height: 25px;
     top: 20px;
@@ -240,8 +240,18 @@ main {
     border: solid 1px var(--green);
     color: var(--green);
 }
+.slider__btn span {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .slider__btn--right {
-    right: 10px;
+    background-image: url("../ASSETS/ICONS/arrow_forward.svg");
+}
+.slider__btn--left {
+    background-image: url("../ASSETS/ICONS/arrow_back.svg");
 }
 .slider__btn--left {
     left: 10px;
