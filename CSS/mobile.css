@@ -230,10 +230,6 @@ main {
     display: flex;
     width: 25px;
     height: 25px;
-    top: 20px;
-    padding: 2px;
-    font-size: 1.5rem;
-    text-align: center;
 }
 .slider__btn:hover {
     background: var(--blue);
@@ -252,9 +248,6 @@ main {
 }
 .slider__btn--left {
     background-image: url("../ASSETS/ICONS/arrow_back.svg");
-}
-.slider__btn--left {
-    left: 10px;
 }
 
 /* EDUCATION SECTION */
