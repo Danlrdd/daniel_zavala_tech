@@ -330,3 +330,37 @@ main {
 .portfolio__logos .--js {
     background-image: url("../ASSETS/IMAGES/js.png");
 }
+
+/* CONTACT SECTION */
+.contactContainer {
+    height: auto;
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contactContainer span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /* background-color: #03C988; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+.contactContainer .span__mail {
+    background-image: url("../ASSETS/ICONS/gmail_logo.png");
+}
+.contactContainer .span__linkedin  {
+    background-image: url("../ASSETS/ICONS/linkedin_icon.png");
+}
+.contactContainer .span__phone  {
+    background-image: url("../ASSETS/ICONS/whatsapp_icon.png");
+}
+.contactContainer a{
+    color: white;
+}
